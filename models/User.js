@@ -28,12 +28,7 @@ const userSchema = new mongoose.Schema({
   category: {
     type: String,
   },
-  purchase_history: [
-    {
-      type: String,
-    },
-  ],
-  pending_orders: [
+  orders: [
     {
       type: String,
     },

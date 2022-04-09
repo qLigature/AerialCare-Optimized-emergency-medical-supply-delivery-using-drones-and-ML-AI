@@ -17,7 +17,7 @@ const droneSchema = new mongoose.Schema({
   },
 });
 
-droneSchema.index({ location: '2dsphere' });
+droneSchema.index({ current_location: '2dsphere' });
 
 const drones = mongoose.model('drones', droneSchema);
 

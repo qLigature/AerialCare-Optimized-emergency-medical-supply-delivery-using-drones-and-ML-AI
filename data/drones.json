@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "6251a8ccdbcfaac650b9d7ae"
+  },
+  "current_location": {
+    "type": "Point",
+    "coordinates": [
+      12.925053920139511,
+      77.70150517333768
+    ]
+  },
+  "status": "free",
+  "__v": 0
+}]
