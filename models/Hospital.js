@@ -7,18 +7,20 @@ const hospitalSchema = new mongoose.Schema({
   location: {
     type: {
       type: String,
+      enum: ['Point'],
       default: 'Point',
     },
-    coordinates: [
-      {
-        type: Number,
-      },
-    ],
+    coordinates: {
+      type: [Number],
+      required: true,
+    },
   },
   products_id: {
     type: String,
   },
 });
+
+hospitalSchema.index({ location: '2dsphere' });
 
 const Hospitals = mongoose.model('hospitals', hospitalSchema);
 

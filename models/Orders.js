@@ -1,19 +1,19 @@
 const mongoose = require('mongoose');
 
-const droneStationSchema = new mongoose.Schema({
+const OrderSchema = new mongoose.Schema({
   user_id: {
     type: String,
   },
   destination_location: {
     type: {
       type: String,
+      enum: ['Point'],
       default: 'Point',
     },
-    coordinates: [
-      {
-        type: Number,
-      },
-    ],
+    coordinates: {
+      type: [Number],
+      required: true,
+    },
   },
   total_price: {
     type: Number,
@@ -33,6 +33,8 @@ const droneStationSchema = new mongoose.Schema({
   },
 });
 
-const DroneStations = mongoose.model('droneStations', droneStationSchema);
+OrderSchema.index({ location: '2dsphere' });
 
-module.exports = DroneStations;
+const Orders = mongoose.model('Orders', OrderSchema);
+
+module.exports = Orders;
