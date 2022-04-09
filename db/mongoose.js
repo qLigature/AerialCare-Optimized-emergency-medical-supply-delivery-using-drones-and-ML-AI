@@ -8,8 +8,8 @@ mongoose.connect(process.env.DB_URL, {
 
 mongoose.connection
   .once('open', () => {
-    console.log('DB connected');
+    // console.log('DB connected');
   })
   .on('error', (error) => {
-    console.log('err', error);
+    // console.log('err', error);
   });
