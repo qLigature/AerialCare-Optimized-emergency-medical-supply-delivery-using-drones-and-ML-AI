@@ -27,6 +27,10 @@ const droneStationSchema = new mongoose.Schema({
   notes: {
     type: String,
   },
+  dateTime: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const DroneStations = mongoose.model('droneStations', droneStationSchema);

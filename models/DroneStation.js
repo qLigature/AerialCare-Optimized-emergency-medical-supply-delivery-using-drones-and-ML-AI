@@ -15,9 +15,6 @@ const droneStationSchema = new mongoose.Schema({
   number_of_drones_available: {
     type: Number,
   },
-  total_number_of_drones: {
-    type: Number,
-  },
 });
 
 const DroneStations = mongoose.model('droneStations', droneStationSchema);
