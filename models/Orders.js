@@ -15,6 +15,28 @@ const OrderSchema = new mongoose.Schema({
       required: true,
     },
   },
+  hospital_location: {
+    type: {
+      type: String,
+      enum: ['Point'],
+      default: 'Point',
+    },
+    coordinates: {
+      type: [Number],
+      required: true,
+    },
+  },
+  drone_location: {
+    type: {
+      type: String,
+      enum: ['Point'],
+      default: 'Point',
+    },
+    coordinates: {
+      type: [Number],
+      required: true,
+    },
+  },
   total_price: {
     type: Number,
   },
@@ -27,13 +49,16 @@ const OrderSchema = new mongoose.Schema({
   notes: {
     type: String,
   },
-  dateTime: {
+  ordered_date: {
     type: Date,
     default: Date.now,
   },
+  drone_id: {
+    type: String,
+  },
 });
 
-OrderSchema.index({ location: '2dsphere' });
+OrderSchema.index({ destination_location: '2dsphere' });
 
 const Orders = mongoose.model('Orders', OrderSchema);
 
