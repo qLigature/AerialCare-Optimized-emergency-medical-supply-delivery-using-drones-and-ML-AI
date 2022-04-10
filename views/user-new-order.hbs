@@ -170,15 +170,12 @@
 
       // Get saved coordinates from demo
       if (x.innerHTML === "No destination detected") {
-        coords = {
-          latitude: "0",
-          longitude: "0"
-        }
+        alert('Please select a destination');
+        return;
       } else {
-        coords = {
-          latitude: x.innerHTML.split(',')[0],
-          longitude: x.innerHTML.split(',')[1]
-        }
+        const latitude = Number(x.innerHTML.split(',')[0]);
+        const longitude = Number(x.innerHTML.split(',')[1]);
+        coords = [latitude, longitude];
       }
       const id = await sessionStorage.getItem('user');
 
@@ -192,7 +189,8 @@
         body: JSON.stringify({
           user_id: id,
           product,
-          location
+          location: coords,
+          note: 'sample note',
         }),
       })
         .then((res) => res.json())
