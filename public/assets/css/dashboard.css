@@ -80,3 +80,20 @@ body {
   background-color: white;
   border-radius: 10px;
 }
+
+/* Buttons */
+.input-group button {
+  z-index: 0 !important;
+}
+
+.order-selection button {
+  background-color: white !important;
+  border: white;
+  z-index: 0;
+}
+
+.order-selection button:hover {
+  background-color: #F37474 !important;
+  color: white !important;
+  z-index: 100;
+}

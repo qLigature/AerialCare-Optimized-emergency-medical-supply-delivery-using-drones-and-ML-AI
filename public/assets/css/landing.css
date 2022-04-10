@@ -8,3 +8,8 @@ h1 {
 main {
   height: 80vh;
 }
+
+.btn {
+  background-color: white ;
+  border: none;
+}
