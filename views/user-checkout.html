@@ -19,7 +19,7 @@
   <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <h3 class="ms-3 mt-2">AerialCare - Add a New Order</h2>
+        <h3 class="ms-3 mt-2">AerialCare - Add New Order</h2>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
         aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,66 +75,46 @@
   <main>
 
     <div class="dashboard-card">
-      <!-- create checkout screen -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="">Pick-up time</h3>
-                <hr>
-                <p> In about 23 hours and 59 minutes </p>
-              </div>
-            </div>
-          </div>
+      <h2 class="pb-4">Additional details</h2>
+
+      <!-- Notes (to be included if there's more time) -->
+      <!-- <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1"><img src="../public/assets/images/notes.svg"
+            height="20px"></span>
+        <input type="text" class="form-control" placeholder="Add notes to your order" aria-label="notes"
+          aria-describedby="basic-addon1">
+      </div> -->
+
+      <!-- Prescription (to be included if there's more time) -->
+      <!-- <p> <span> Upload your prescription : </span> </p>
+      <div class="input-group mb-3">
+        <input type="file" class="form-control" id="inputGroupFile02" placeholder="Upload your prescription">
+        <label class="input-group-text" for="inputGroupFile02">Upload</label>
+      </div> -->
+
+      <form action="./user-dashboard.html">
+        <div class="input-group mb-5">
+
+          <label class="input-group-text" for="inputGroupSelect01">Select Payment Method</label>
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected value="card">Credit/Debit Card</option>
+            <option value="bank">Internet Banking</option>
+            <option value="upi">UPI</option>
+          </select>
         </div>
 
-        <!-- add additional details -->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="">Additional details</h3>
-                <hr>
-                <form>
-                  <div class="form-group">
-                    <!-- add notes to your delivery -->
-                    <div class="input-group mb-3">
-                      <span class="input-group-text" id="basic-addon1"><img src="../public/assets/images/notes.svg"
-                          height="20px"></span>
-                      <input type="text" class="form-control" placeholder="Add notes to your order" aria-label="notes"
-                        aria-describedby="basic-addon1">
-                    </div>
-
-
-                    <p> <span> Upload your prescription : </span> </p>
-                    <div class="input-group mb-3">
-                      <input type="file" class="form-control" id="inputGroupFile02"
-                        placeholder="Upload your prescription">
-                      <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                    </div>
-                    <div class="input-group mb-3">
-                      <label class="input-group-text" for="inputGroupSelect01">
-                        << /label>
-                          <select class="form-select" id="inputGroupSelect01">
-                            <option selected>Select payment method</option>
-                            <option value="1">Credit/Debit cards</option>
-                            <option value="2">Internet banking</option>
-                            <option value="3">UPI</option>
-                          </select>
-                    </div>
-
-
-
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+        <div class="d-flex justify-content-between pb-4">
+          <h3>Total:</h3>
+          <h3>₹999,999.99</h3>
         </div>
-      </div>
+
+        <div class="d-flex justify-content-center w-100">
+          <button href="./user-new-order.html" class="btn btn-lg bg-danger text-light mb-4 px-5 ms-auto me-auto"
+            type="submit">Submit Order</button>
+        </div>
+      </form>
+
     </div>
-
 
   </main>
 
