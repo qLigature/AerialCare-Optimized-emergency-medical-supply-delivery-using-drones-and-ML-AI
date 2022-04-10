@@ -26,6 +26,7 @@ const retrieveNearByDroneStations = async (location) =>
         $centerSphere: [location, 6 / 3963.2],
       },
     },
+    number_of_drones_available: { $gt: 0 },
   });
 
 const retrieveNearByHospitals = async (location) =>
@@ -43,6 +44,8 @@ const addDrone = async (current_location, status) =>
     status,
   }).save();
 
+const retrieveProducts = async (product_id) => Products.findById(product_id);
+
 module.exports = {
   checkUserExistence,
   saveUser,
@@ -51,4 +54,5 @@ module.exports = {
   addHospital,
   retrieveNearByHospitals,
   addDrone,
+  retrieveProducts,
 };

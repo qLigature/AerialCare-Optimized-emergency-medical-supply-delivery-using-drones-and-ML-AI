@@ -52,3 +52,9 @@ afterAll(() => {
 //   console.log(product);
 //   expect(product).not.toBeFalsy();
 // });
+
+// test('add Products', async () => {
+//   const product = await DAL.prod();
+//   console.log(product);
+//   expect(product).not.toBeFalsy();
+// });
