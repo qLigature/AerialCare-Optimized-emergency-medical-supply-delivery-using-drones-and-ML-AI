@@ -43,13 +43,14 @@ body {
     z-index: 2;
   }
 
-  #sidebarMenu{
+  #sidebarMenu {
     position: fixed;
     top: 70px;
     width: 100%;
   }
 
-  .desktop, a.desktop {
+  .desktop,
+  a.desktop {
     display: none !important;
   }
 }
@@ -93,7 +94,7 @@ body {
 }
 
 .order-selection button:hover {
-  background-color: #F37474 !important;
+  background-color: #f37474 !important;
   color: white !important;
   z-index: 100;
 }

@@ -115,7 +115,7 @@ const buy = async (req, res) => {
       user_id,
       product,
       location,
-      ''
+      'note'
     );
     res.status(200).send({
       status: 'success',
