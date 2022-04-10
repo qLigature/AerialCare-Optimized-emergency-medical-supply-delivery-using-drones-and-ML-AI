@@ -1,0 +1,477 @@
+[{
+  "_id": {
+    "$oid": "625189b85410a71a1e16866c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      13.010765573553499,
+      77.5122388931732
+    ]
+  },
+  "number_of_drones_available": 5,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62518b899b8a62255b14a6f8"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      13.007651532204507,
+      77.50593084044431
+    ]
+  },
+  "number_of_drones_available": 7,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62518cc0aa78df45fcbb952f"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.87615315607864,
+      77.62248890888304
+    ]
+  },
+  "number_of_drones_available": 7,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16876c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.979550796991557,
+      77.54558466359519
+    ]
+  },
+  "number_of_drones_available": 5,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16886c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.982896283979915,
+      77.51605890840895
+    ]
+  },
+  "number_of_drones_available": 3,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16869c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.937393806734164,
+      77.51468561747005
+    ]
+  },
+  "number_of_drones_available": 15,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16877c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.92936309515862,
+      77.48756312142686
+    ]
+  },
+  "number_of_drones_available": 8,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16890c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.951652873971735,
+      77.51158295738624
+    ]
+  },
+  "number_of_drones_available": 9,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16891c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.896105007152856,
+      77.53527222608217
+    ]
+  },
+  "number_of_drones_available": 5,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16950c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.965705192702057,
+      77.51879273481543
+    ]
+  },
+  "number_of_drones_available": 4,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16951c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.973400173921869,
+      77.55312500828781
+    ]
+  },
+  "number_of_drones_available": 11,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16952c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.93893818827111,
+      77.52840577138768
+    ]
+  },
+  "number_of_drones_available": 13,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16953c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.975407521177472,
+      77.48308717040413
+    ]
+  },
+  "number_of_drones_available": 7,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16954c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.906144692726583,
+      77.56479798126841
+    ]
+  },
+  "number_of_drones_available": 17,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16960c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.987785804426998,
+      77.57406769510597
+    ]
+  },
+  "number_of_drones_available": 12,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16961c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.983102202188187,
+      77.58986054090326
+    ]
+  },
+  "number_of_drones_available": 14,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16962c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.896774332059326,
+      77.58574066808657
+    ]
+  },
+  "number_of_drones_available": 9,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16963c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.934922889654585,
+      77.58574066808657
+    ]
+  },
+  "number_of_drones_available": 5,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16964c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.923545859330934,
+      77.52943573959188
+    ]
+  },
+  "number_of_drones_available": 7,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16965c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.88740362048885,
+      77.50952302097788
+    ]
+  },
+  "number_of_drones_available": 4,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16966c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.955333319810398,
+      77.52222596216265
+    ]
+  },
+  "number_of_drones_available": 10,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16970c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      13.02826182671911,
+      77.5946670591894
+    ]
+  },
+  "number_of_drones_available": 20,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16971c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      13.031606656843465,
+      77.55896149477812
+    ]
+  },
+  "number_of_drones_available": 14,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16972c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.969385430806915,
+      77.6176696824159
+    ]
+  },
+  "number_of_drones_available": 7,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16973c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.947303186064312,
+      77.59707031833247
+    ]
+  },
+  "number_of_drones_available": 22,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16974c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.884726209907498,
+      77.6149231005381
+    ]
+  },
+  "number_of_drones_available": 6,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16975c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.927895961573034,
+      77.62796936445761
+    ]
+  },
+  "number_of_drones_available": 3,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16976c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.942284221068597,
+      77.68049774287036
+    ]
+  },
+  "number_of_drones_available": 19,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16977c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.952322049987002,
+      77.68770752029957
+    ]
+  },
+  "number_of_drones_available": 18,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16978c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.964032339206675,
+      77.64959869674522
+    ]
+  },
+  "number_of_drones_available": 13,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16979c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.956002485938349,
+      77.62350616890622
+    ]
+  },
+  "number_of_drones_available": 10,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16980c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.884056852790023,
+      77.5915771545769
+    ]
+  },
+  "number_of_drones_available": 10,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16981c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.96443993235845,
+      77.58986493751254
+    ]
+  },
+  "number_of_drones_available": 20,
+  "drone_list": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "625189b85410a71a1e16982c"
+  },
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      12.889670197263209,
+      77.57845494332118
+    ]
+  },
+  "number_of_drones_available": 11,
+  "drone_list": [],
+  "__v": 0
+}]

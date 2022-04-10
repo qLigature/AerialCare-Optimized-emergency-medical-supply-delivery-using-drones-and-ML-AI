@@ -15,6 +15,11 @@ const droneStationSchema = new mongoose.Schema({
   number_of_drones_available: {
     type: Number,
   },
+  drone_list: [
+    {
+      type: String,
+    },
+  ],
 });
 
 droneStationSchema.index({ location: '2dsphere' });

@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6251766d299811c3d93cbbc4"
+  },
+  "email": "swastikdragon@gmail.com",
+  "name": "swastik",
+  "number": "7760059852",
+  "password": "password",
+  "category": "single user",
+  "purchase_history": [],
+  "pending_orders": [],
+  "__v": 0
+}]

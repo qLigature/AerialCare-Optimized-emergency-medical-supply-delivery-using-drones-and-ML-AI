@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
     type: String,
   },
   number: {
-    type: Number,
+    type: String,
   },
   password: {
     type: String,
@@ -28,12 +28,7 @@ const userSchema = new mongoose.Schema({
   category: {
     type: String,
   },
-  purchase_history: [
-    {
-      type: String,
-    },
-  ],
-  pending_orders: [
+  orders: [
     {
       type: String,
     },
