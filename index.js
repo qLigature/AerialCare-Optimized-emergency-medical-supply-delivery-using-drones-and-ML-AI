@@ -1,8 +1,10 @@
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
+require('dotenv').config();
 const componentRouter = require('./components/router');
 
+const PORT = process.env.PORT || 3000;
 const app = express();
 const publicDirectoryPath = path.join(__dirname, '/public');
 
@@ -12,9 +14,10 @@ app.use(express.static(publicDirectoryPath));
 
 app.use(express.json());
 app.use(cors());
+app.options('*', cors());
 
 app.use(componentRouter);
 
-app.listen(3000, () => {
-  console.log(`Server is up on port 3000`);
+app.listen(PORT, () => {
+  console.log(`Server is up on http://localhost:${PORT}`);
 });
