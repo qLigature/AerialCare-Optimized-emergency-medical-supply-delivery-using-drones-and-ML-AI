@@ -14,3 +14,12 @@ afterAll(() => {
 //   console.log(nearByHospitalsAndDroneStations);
 //   expect(nearByHospitalsAndDroneStations).not.toBeFalsy();
 // });
+
+test('testing create order', async () => {
+  const order = await buyer.createOrder(
+    '6251766d299811c3d93cbbc4',
+    'heart',
+    [12.988287284503214, 77.54459789816788]
+  );
+  expect(order).not.toBeFalsy();
+});

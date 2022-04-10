@@ -4,6 +4,7 @@ const DroneStations = require('../models/DroneStation');
 const Hospitals = require('../models/Hospital');
 const Drone = require('../models/Drone');
 const Products = require('../models/Products');
+const Orders = require('../models/Orders');
 
 const saveUser = async (userDetails) => new Users(userDetails).save();
 
@@ -46,6 +47,23 @@ const addDrone = async (current_location, status) =>
 
 const retrieveProducts = async (product_id) => Products.findById(product_id);
 
+const retrieveProductsByHospitalID = async (hospital_id) =>
+  Products.findOne({ hospital_id });
+
+const createOrder = async (order) => new Orders(order).save();
+
+const retrieveHospital = async (location) =>
+  Hospitals.findOne({
+    location: {
+      $near: {
+        $geometry: { type: 'Point', coordinates: location },
+      },
+    },
+  });
+
+const updateUserOrders = async (userId, orderId) =>
+  Users.updateOne({ _id: userId }, { $push: { orders: orderId } });
+
 module.exports = {
   checkUserExistence,
   saveUser,
@@ -55,4 +73,8 @@ module.exports = {
   retrieveNearByHospitals,
   addDrone,
   retrieveProducts,
+  createOrder,
+  retrieveHospital,
+  retrieveProductsByHospitalID,
+  updateUserOrders,
 };

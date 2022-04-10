@@ -19,7 +19,8 @@
     "hbs": "^4.2.0",
     "mongodb": "^4.5.0",
     "mongoose": "^6.2.10",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

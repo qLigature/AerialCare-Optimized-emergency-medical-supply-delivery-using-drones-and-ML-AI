@@ -1,4 +1,5 @@
 const authService = require('./auth_services');
+const buyer_services = require('./buyer_services');
 
 const testing = async (req, res) => {
   try {
@@ -52,8 +53,27 @@ const login = async (req, res) => {
   }
 };
 
+const buy = async (req, res) => {
+  try {
+    const { user_id, product, location, notes } = req.body;
+    const order = await buyer_services.createOrder(
+      user_id,
+      product,
+      location,
+      notes
+    );
+    res.status(200).send({
+      status: 'success',
+      order_details: order,
+    });
+  } catch (err) {
+    res.status(400).send({ status: 'failed', message: err.message });
+  }
+};
+
 module.exports = {
   testing,
   login,
   register,
+  buy,
 };
