@@ -44,7 +44,7 @@
   </nav>
 
   <main class="form-signin">
-    <form method="post">
+    <form>
       <h1 class="h3 mb-3 fw-normal">Sign in to AerialCare</h1>
 
       <div class="form-floating">
@@ -84,11 +84,13 @@
       })
         .then((res) => res.json())
         .then((data) => {
-          if (data.success) {
+
+          if (data.status === 'success') {
             window.location.href = './dashboardPage';
-          } else {
-            alert(data.message);
+            return;
           }
+          alert(data.message);
+          return;
         })
         .catch((err) => console.log(err));
     });

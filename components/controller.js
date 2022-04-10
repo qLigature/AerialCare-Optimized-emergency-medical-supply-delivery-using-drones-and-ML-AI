@@ -110,12 +110,12 @@ const login = async (req, res) => {
 
 const buy = async (req, res) => {
   try {
-    const { user_id, product, location, notes } = req.body;
+    const { user_id, product, location } = req.body;
     const order = await buyer_services.createOrder(
       user_id,
       product,
       location,
-      notes
+      ''
     );
     res.status(200).send({
       status: 'success',
