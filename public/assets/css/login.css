@@ -39,3 +39,7 @@ body {
   background-color: #F37474 ;
   border: none;
 }
+
+.btn:hover {
+  color: black !important;
+}
