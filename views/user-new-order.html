@@ -88,13 +88,28 @@
     <div class="dashboard-card">
       <h2 class="pt-2 pb-4">Order Details</h2>
       <form action="./user-checkout.html">
-        <div class="form-floating pb-3">
-          <input type="text" class="form-control" id="floatingPassword" placeholder="Select Product Category">
-          <label for=" floatingPassword">Select Product Category</label>
+
+        <!-- Add first aid kit + medication category if there's time -->
+        <div class="input-group pb-3">
+          <label class="input-group-text" for="inputGroupSelect1">Select Product Category</label>
+          <select class="form-select" id="inputGroupSelect1">
+            <option selected value="card">Blood</option>
+            <option value="bank">Organs</option>
+          </select>
         </div>
+
+        <!-- Load products programatically here, according to category selected -->
+        <div class="input-group pb-3">
+          <label class="input-group-text" for="inputGroupSelect1">Select Product</label>
+          <select class="form-select" id="inputGroupSelect1">
+            <option selected value="card">Products</option>
+            <option value="bank">More Products</option>
+          </select>
+        </div>
+
         <div class="form-floating pb-4">
-          <input type="text" class="form-control" id="floatingPassword" placeholder="Select Product">
-          <label for="floatingPassword">Select Product</label>
+          <input type="text" class="form-control" id="floatingNumber" placeholder="Phone Number">
+          <label for="floatingNumber">Phone Number</label>
         </div>
 
         <div class="d-flex justify-content-between pb-4">
