@@ -1,9 +1,73 @@
 const authService = require('./auth_services');
 const buyer_services = require('./buyer_services');
 
-const testing = async (req, res) => {
+// const testing = async (req, res) => {
+//   try {
+//     res.render('index', { testing: 'success' });
+//   } catch (err) {
+//     res.status(400).send({ status: 'failed', message: err.message });
+//   }
+// };
+
+const loginPage = async (req, res) => {
   try {
-    res.render('index', { testing: 'success' });
+    res.render('login', {});
+  } catch (err) {
+    res.status(400).send({ status: 'failed', message: err.message });
+  }
+};
+
+const landingPage = async (req, res) => {
+  try {
+    res.render('landing', {});
+  } catch (err) {
+    res.status(400).send({ status: 'failed', message: err.message });
+  }
+};
+
+const registrationPage = async (req, res) => {
+  try {
+    res.render('registration', {});
+  } catch (err) {
+    res.status(400).send({ status: 'failed', message: err.message });
+  }
+};
+
+const checkoutPage = async (req, res) => {
+  try {
+    res.render('user-checkout', {});
+  } catch (err) {
+    res.status(400).send({ status: 'failed', message: err.message });
+  }
+};
+
+const dashboardPage = async (req, res) => {
+  try {
+    res.render('user-dashboard', {});
+  } catch (err) {
+    res.status(400).send({ status: 'failed', message: err.message });
+  }
+};
+
+const newOrderPage = async (req, res) => {
+  try {
+    res.render('user-new-order', {});
+  } catch (err) {
+    res.status(400).send({ status: 'failed', message: err.message });
+  }
+};
+
+const ordersPage = async (req, res) => {
+  try {
+    res.render('user-orders', {});
+  } catch (err) {
+    res.status(400).send({ status: 'failed', message: err.message });
+  }
+};
+
+const adminOrdersPage = async (req, res) => {
+  try {
+    res.render('admin-orders', {});
   } catch (err) {
     res.status(400).send({ status: 'failed', message: err.message });
   }
@@ -72,8 +136,15 @@ const buy = async (req, res) => {
 };
 
 module.exports = {
-  testing,
+  landingPage,
+  loginPage,
   login,
   register,
   buy,
+  registrationPage,
+  checkoutPage,
+  dashboardPage,
+  newOrderPage,
+  ordersPage,
+  adminOrdersPage,
 };
