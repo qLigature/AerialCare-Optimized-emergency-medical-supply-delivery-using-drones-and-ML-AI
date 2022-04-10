@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../public/assets/css/dashboard.css">
+  <title>AerialCare - Dashboard</title>
+</head>
+
+<body>
+
+  <!-- Main Navbar -->
+
+  <nav id="main-navbar" class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <h3 class="ms-3 mt-2">AerialCare - Orders</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+        aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+
+  <nav id="sidebarMenu" class="sidebar p-3 d-lg-block collapse text-white bg-danger">
+    <a href="#"
+      class="desktop avatar d-flex align-items-center my-3 py-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <img src="../public/assets/images/profile-user.svg" alt="" width="50" height="50">
+      <div class="ms-3">
+        <p class="fw-bold">Mr. Firstname Lastname</p>
+        <p>fullname@gmail.com</p>
+      </div>
+    </a>
+    <hr class="desktop">
+    <a href="./user-new-order.html" class="w-100 btn btn-lg bg-white mb-4" type="submit">Add a New Order</a>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="./user-dashboard.html" class="nav-link text-white" aria-current="page">
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="./user-orders.html" class="nav-link active text-white">
+          Orders
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          Help Center
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link text-white">
+          Settings
+        </a>
+      </li>
+      <li>
+        <a href="./landing.html" class="nav-link text-white">
+          Sign Out
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Body -->
+
+  <main>
+
+    <div class="dashboard-card">
+      <!-- create a div element to search among the orders -->
+      <div class="container-fluid" style="margin-bottom:5px">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for orders...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button">Search</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">Orders</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-secondary">ALL</button>
+                      <button type="button" class="btn btn-secondary">PENDING</button>
+                      <button type="button" class="btn btn-secondary">COMPLETED</button>
+                      <button type="button" class="btn btn-secondary">CANCELLED</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover">
+                      <thead>
+                        <tr>
+                          <th>Order ID</th>
+                          <th>Date</th>
+                          <th>Status</th>
+                          <th>Total</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>PR31245799</td>
+                          <td>12/02/2022</td>
+                          <td>
+                            <span class="badge bg-success">COMPLETED</span>
+                          </td>
+                          <td>$100</td>
+                          <td>
+                            <a href="#" class="btn btn-primary btn-sm">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>PR31245799</td>
+                          <td>12/02/2022</td>
+                          <td>
+                            <span class="badge bg-warning">PENDING</span>
+                          </td>
+                          <td>$100</td>
+                          <td>
+                            <a href="#" class="btn btn-primary btn-sm">View</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>PR31245799</td>
+                          <td>12/02/2022</td>
+                          <td>
+                            <span class="badge bg-danger">CANCELLED</span>
+                          </td>
+                          <td>$100</td>
+                          <td>
+                            <a href="#" class="btn btn-primary btn-sm">View</a>
+                          </td>
+                        </tr>
+                        </t>
+                    </table>
+
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
