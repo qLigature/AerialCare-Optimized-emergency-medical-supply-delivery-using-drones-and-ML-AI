@@ -75,23 +75,14 @@ const adminOrdersPage = async (req, res) => {
 
 const register = async (req, res) => {
   try {
-    const {
-      email,
-      name,
-      number,
-      password,
-      category,
-      purchase_history,
-      pending_history,
-    } = req.body;
+    const { email, name, password } = req.body;
     const user = await authService.saveUser({
       email,
       name,
-      number,
+      number: '123456789',
       password,
-      category,
-      purchase_history,
-      pending_history,
+      category: 'single user',
+      orders: [],
     });
     res.status(200).send({
       status: 'success',
